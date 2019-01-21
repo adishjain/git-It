@@ -1,11 +1,15 @@
 # git-It
 This script lists subdomains of the domains/IPs provided in the input file and identifies public /.git and other directories/files for each domain/IP and its corresponding subdoamins.
 # Setup
-1. Install necessary modules
+1. Clone/Download the git-It repository
+```
+> git clone https://github.com/adishjain/git-It
+```
+2. Install necessary modules
 ```
 > pip3 install -r requirements.txt
 ```
-2. Paste your virustotal api key in gitIt.py on line 43
+3. Paste your virustotal api key in gitIt.py on line 43
 # Usage
 ```
 > python3 gitIt.py [INPUTFILE]
