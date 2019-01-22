@@ -113,6 +113,7 @@ def find_git(domain):
         '.git/info/exclude',
         '.git/objects/info/packs',]
         for item in git_list:
+                item = item.strip()
                 try:
                         response_raw = urllib.request.urlopen('http://'+domain+'/'+item)
                         response_dict = json.loads(response_raw.read())
